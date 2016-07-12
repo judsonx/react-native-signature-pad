@@ -55,7 +55,7 @@ var content = exportBackgroundColor => `var SignaturePad = (function (document) 
     var canvas = this._canvas;
     var exportBackgroundColor = ${exportBackgroundColor
       ? "'" + exportBackgroundColor + "'"
-      : null}
+      : null};
 
     if (!exportBackgroundColor) {
       return canvas.toDataURL.apply(canvas, arguments);
