@@ -7,6 +7,7 @@ import {
   View,
   WebView,
   StyleSheet,
+  ViewPropTypes,
 } from 'react-native';
 
 
@@ -23,7 +24,7 @@ class SignaturePad extends Component {
     defaultWidth: PropTypes.number,
     onChange: PropTypes.func,
     onError: PropTypes.func,
-    style: View.propTypes.style,
+    style: ViewPropTypes.style,
     penColor: PropTypes.string,
     dataURL: PropTypes.string,
     exportBackgroundColor: PropTypes.string,
